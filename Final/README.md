@@ -6,6 +6,21 @@ Group Member: Xinwei Xie(xx374），Xueer Zhang(xz946), Maggie Liang(ml2927)
 
 <img width="1688" height="968" alt="image" src="https://github.com/user-attachments/assets/170a21ef-63e8-4dc2-81f4-63a1fc611fba" />
 
+## 📖 Contents
+
+- [Project Overview](#-project-overview)
+- [Big Idea](#-big-idea)
+- [Project Timeline](#️-project-timeline)
+- [Testing Plan](#-testing-plan)
+- [Parts List](#-parts-list)
+- [Physical Design Evolution](#-physical-design-evolution)
+- [Card Dispensing Mechanism](#️-card-dispensing-mechanism)
+- [Hardware Setup](#-hardware-setup)
+- [Software Architecture](#-software-architecture)
+- [Final Interaction Flow](#-final-interaction-flow)
+- [Demo Video](#-demo-video)
+- [Reflections](#-reflections)
+- [Group Work Distribution](#-group-work-distribution)
 
 
 ## 📌 Project Overview
@@ -68,6 +83,9 @@ If the full system failed, we planned several fallback options. First, we could 
 
 ### From Cardboard to Laser-Cut Wood
 
+*[Link to File](https://github.com/m-lmq/Interactive-Lab-Hub/blob/Fall2025/Final/Box.ai)*
+
+
 The initial prototype was built from cardboard, but the final version uses a laser-cut wooden box. We precisely measured and cut openings for the MiiPiTFT screen, buttons, LEDs, two card exits, and rear cable exit. All components are flush with the surface, creating a clean and integrated appearance. The card exit was upgraded from one slot to two slots.
 
 <div align="center">
@@ -76,6 +94,8 @@ The initial prototype was built from cardboard, but the final version uses a las
 </div>
 
 ## ⚙️ Card Dispensing Mechanism
+
+*[Link to File](https://github.com/m-lmq/Interactive-Lab-Hub/blob/Fall2025/Final/card_dispenser.3mf)*
 
 ### Original Plan
 
