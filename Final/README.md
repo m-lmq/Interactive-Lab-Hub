@@ -17,6 +17,7 @@ Group Member: Xinwei Xie(xx374），Xueer Zhang(xz946), Maggie Liang(ml2927)
 - [Card Dispensing Mechanism](#️-card-dispensing-mechanism)
 - [Hardware Setup](#-hardware-setup)
 - [Software Architecture](#-software-architecture)
+- [User Testing & Feedback](#-user-testing-&-feedback)
 - [Final Interaction Flow](#-final-interaction-flow)
 - [Demo Video](#-demo-video)
 - [Reflections](#-reflections)
@@ -117,22 +118,19 @@ We replaced the manual knob with a 360° continuous servo motor attached directl
 
 The surface of the 3D-printed rollers had too little friction, so cards slipped instead of being pushed out. We tried increasing card weight and adding springs on top of the cards, but these attempts failed. The final working solution was adding friction strips using rubber bands. We cut rubber bands and glued them onto the rollers with hot glue, which significantly increased friction and enabled reliable card output.
 
+<details>
+  <summary><strong>▶ Card Dispensing Testing Video </strong></summary>
+  <video src="https://github.com/user-attachments/assets/ff2214b8-66dc-4863-9c8b-be157ee2063f" controls></video>
+</details>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f12d8245-fef0-41b1-8ded-99278d43246a" width="30%">
-  <img src="https://github.com/user-attachments/assets/5a48e806-b9e0-49af-a9c0-e9fdee7918de" width="30%">
-  <img src="https://github.com/user-attachments/assets/cc1811ff-d28f-4a77-b45a-8c325ad21dc2" width="30%">
+  <img src="https://github.com/user-attachments/assets/5a48e806-b9e0-49af-a9c0-e9fdee7918de" width="45%">
+  <img src="https://github.com/user-attachments/assets/cc1811ff-d28f-4a77-b45a-8c325ad21dc2" width="45%">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/21e21cd3-1174-4a65-946b-aa04fc19af3d" width="45%">
+  <img src="https://github.com/user-attachments/assets/32ee8400-8a2e-4cae-8e27-a2906d234cf1" width="45%">
 </div>
 
-<details>
-  <summary><strong>▶ Card Dispensing Testing Video without Box</strong></summary>
-  <video src="https://github.com/user-attachments/assets/49b30265-b461-470c-b232-cfcf7ec4eeb7" controls></video>
-</details>
-
-<details>
-  <summary><strong>▶ Card Dispensing Testing Video with Box</strong></summary>
-  <video src="https://github.com/user-attachments/assets/5735d8a8-f5b6-434b-a8f5-3b81f2f96412" controls></video>
-</details>
 
 ## 🔌 Hardware Setup
 
@@ -190,6 +188,21 @@ The system uses Python language. GPIO is used for LEDs and servo motor. MiiPiTFT
 
 > 🔗 **Code Archive:** *([Link to Code](https://github.com/m-lmq/Interactive-Lab-Hub/blob/Fall2025/Final/1201.py))*
 
+## 👥 User Testing & Feedback
+
+We conducted informal user testing with classmates and instructors during the development process.
+
+### Display & Atmosphere
+In early versions, the on-screen instructions were very explicit and direct. After our instructor tried the prototype, they suggested that the interaction could benefit from a more **mysterious and abstract tone**, making the experience feel less instructional and more like a **random fate or destiny machine**. Based on this feedback, we adjusted the wording and timing of the display to feel more virtual and less deterministic.
+
+### Screen Size
+Some users noted that the screen felt relatively small, especially during option selection. While we agreed that a larger display could improve readability, this limitation could not be addressed due to **budget and hardware constraints**. Instead, we focused on simplifying on-screen text and relying more on lights and sound to communicate system state.
+
+### Light Feedback
+Several users responded very positively to the LED behavior. In particular, they liked how the lights flashed in different patterns depending on the system state. The **one-by-one LED animation during the waiting phase** was frequently mentioned as engaging, as it clearly communicated that the system was thinking or waiting, and helped build anticipation before the card was dispensed.
+
+Overall, user feedback helped us refine the balance between clarity and mystery, reinforcing the experience of chance rather than control.
+
 ## 🧩 Final Interaction Flow
 
 In the idle state, the MiiPiTFT displays "Insert coin". When the user inserts a coin, the distance sensor detects it, an immediate sound effect confirms success, and mysterious background music starts playing. Five LEDs then light up one by one in sequence, indicating the system is waiting for user input.
@@ -197,6 +210,16 @@ In the idle state, the MiiPiTFT displays "Insert coin". When the user inserts a 
 The screen displays "Hold one question in your mind..." and the user presses the button corresponding to "← Yes, I'm ready." Next, two options appear on screen: Option 1 for random card output, or Option 2 to go to a precise choice page.
 
 For Option 1, the system randomly chooses one of two card exits. For Option 2, a next screen appears with Choice A leading to Exit 1 and Choice B leading to Exit 2. Finally, the card is dispensed, all LEDs turn on simultaneously, and the card contains an answer to the user's question (positive, negative, or ambiguous).
+
+<details>
+  <summary><strong>▶ Testing Video without Box</strong></summary>
+  <video src="https://github.com/user-attachments/assets/49b30265-b461-470c-b232-cfcf7ec4eeb7" controls></video>
+</details>
+
+<details>
+  <summary><strong>▶ Testing Video with Box</strong></summary>
+  <video src="https://github.com/user-attachments/assets/5735d8a8-f5b6-434b-a8f5-3b81f2f96412" controls></video>
+</details>
 
 ## 🎥 Demo Video
 
