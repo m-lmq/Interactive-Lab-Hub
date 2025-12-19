@@ -82,6 +82,8 @@ If the full system failed, we planned several fallback options. First, we could 
 
 ## 🧱 Physical Design Evolution
 
+![WTDB_Diagram](https://github.com/user-attachments/assets/54a01a57-c021-40b6-bfbd-9596b37c9096
+
 ### From Cardboard to Laser-Cut Wood
 
 *[Link to File](https://github.com/m-lmq/Interactive-Lab-Hub/blob/Fall2025/Final/Box.ai)*
