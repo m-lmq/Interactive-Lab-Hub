@@ -82,12 +82,11 @@ If the full system failed, we planned several fallback options. First, we could 
 
 ## 🧱 Physical Design Evolution
 
-![WTDB_Diagram](https://github.com/user-attachments/assets/54a01a57-c021-40b6-bfbd-9596b37c9096
+![IMG_0876](https://github.com/user-attachments/assets/2a8708d9-6f45-4b29-840e-339a0362df76)
 
 ### From Cardboard to Laser-Cut Wood
 
 *[Link to File](https://github.com/m-lmq/Interactive-Lab-Hub/blob/Fall2025/Final/Box.ai)*
-
 
 The initial prototype was built from cardboard, but the final version uses a laser-cut wooden box. We precisely measured and cut openings for the MiiPiTFT screen, buttons, LEDs, two card exits, and rear cable exit. All components are flush with the surface, creating a clean and integrated appearance. The card exit was upgraded from one slot to two slots.
 
